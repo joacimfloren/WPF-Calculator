@@ -1,0 +1,46 @@
+﻿<Window x:Class="GuiLab3Calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Calculator" Height="450" Width="300"
+        FontFamily="Calibri"
+        Background="White">
+    
+    <Grid Name="grid_buttons">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Name="label_Remember" VerticalAlignment="Center" FontSize="12" Margin="10, 0, 0, 0"></Label>
+        <Label Name="label_Value" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="30" Margin="0, 0, 10, 0">0</Label>
+        <Button Click="btn_PosNeg_Click" Grid.Row="1" Grid.ColumnSpan="2">+ / -</Button>
+        <Button Click="btn_Clear_Click" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">CLEAR</Button>
+        <Button Click="btn_Number_Click" Grid.Row="2">7</Button>
+        <Button Click="btn_Number_Click" Grid.Row="2" Grid.Column="1">8</Button>
+        <Button Click="btn_Number_Click" Grid.Row="2" Grid.Column="2">9</Button>
+        <Button Click="btn_Division_Click" Grid.Row="2" Grid.Column="3">÷</Button>
+        <Button Click="btn_Number_Click" Grid.Row="3">4</Button>
+        <Button Click="btn_Number_Click" Grid.Row="3" Grid.Column="1">5</Button>
+        <Button Click="btn_Number_Click" Grid.Row="3" Grid.Column="2">6</Button>
+        <Button Click="btn_Multi_Click" Grid.Row="3" Grid.Column="3">x</Button>
+        <Button Click="btn_Number_Click" Grid.Row="4">1</Button>
+        <Button Click="btn_Number_Click" Grid.Row="4" Grid.Column="1">2</Button>
+        <Button Click="btn_Number_Click" Grid.Row="4" Grid.Column="2">3</Button>
+        <Button Click="btn_Minus_Click" Grid.Row="4" Grid.Column="3">-</Button>
+        <Button Click="btn_Number_Click" Grid.Row="5">0</Button>
+        <Button Click="btn_Decimal_Click" Grid.Row="5" Grid.Column="1">,</Button>
+        <Button Click="btn_Equals_Click" Grid.Row="5" Grid.Column="2">=</Button>
+        <Button Click="btn_Plus_Click" Grid.Row="5" Grid.Column="3">+</Button>
+    </Grid>
+    
+</Window>
